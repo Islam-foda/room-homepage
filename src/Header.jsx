@@ -1,9 +1,11 @@
-export default function Header({ image,title }) {
+export default function Header({ image, title }) {
   return (
     <header className="header">
       <nav>
         <div className="room-logo">
-          <img src="/src/assets/logo.svg" alt="room-logo" />
+          <a href="#">
+            <img src="/src/assets/logo.svg" alt="room-logo" />
+          </a>
         </div>
         <ul className="nav-menu">
           <li>
