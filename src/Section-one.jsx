@@ -1,4 +1,4 @@
-export default function SectionOne({ title, desc }) {
+export default function SectionOne({ title, desc, prev, next }) {
   return (
     <section className="one">
       <div className="content">
@@ -6,21 +6,17 @@ export default function SectionOne({ title, desc }) {
         <p>{desc}</p>
         <h3>
           shop now{" "}
-          <span>
+          <span data-image="image">
             <img src="/src/assets/icon-arrow.svg" alt="arrow"></img>
           </span>
         </h3>
       </div>
       <div className="slider-btn">
-        <button>
-          <svg>
-            <use href="/src/assets/icon-angle-left.svg"></use>
-          </svg>
+        <button onClick={prev} className="navigate-arrow">
+          <img src="/src/assets/icon-angle-left.svg" />
         </button>
-        <button>
-          <svg>
-            <use href="/src/assets/icon-angle-right.svg"></use>
-          </svg>
+        <button onClick={next} className="navigate-arrow">
+          <img src="/src/assets/icon-angle-right.svg" />
         </button>
       </div>
     </section>
