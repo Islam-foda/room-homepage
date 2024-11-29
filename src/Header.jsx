@@ -1,3 +1,8 @@
+import logo from "./assets/logo.svg"
+import burgerBtn from "./assets/icon-hamburger.svg"
+import closeBtn from "./assets/icon-close.svg"
+// import images from "./data"
+
 export default function Header({ image, title }) {
   const btnMenu = document.getElementById("imgBurger");
   const imgClose = document.querySelector("[data-img-close]");
@@ -20,19 +25,19 @@ export default function Header({ image, title }) {
       <nav>
         <div className="room-logo">
           <a href="#">
-            <img src="/src/assets/logo.svg" alt="room-logo" />
+            <img src={logo} alt="room-logo" />
           </a>
         </div>
         <button className="nav-burger" id="nav-burger">
           <img
             id="imgBurger"
             data-img-burger="burger"
-            src="/src/assets/icon-hamburger.svg"
+            src={burgerBtn}
             alt="burger-icon"
           />
           <img
             data-img-close="close"
-            src="/src/assets/icon-close.svg"
+            src={closeBtn}
             alt="close-icon"
             style={{ display: "none" }}
           />

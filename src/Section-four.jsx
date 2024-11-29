@@ -1,8 +1,10 @@
+import imgLight from "./assets/image-about-light.jpg";
+
 export default function SectionFour() {
   return (
     <section className="four">
       <div className="image">
-        <img src="/src/assets/image-about-light.jpg" alt="image-chair" />
+        <img src={imgLight} alt="image-chair" />
       </div>
     </section>
   );

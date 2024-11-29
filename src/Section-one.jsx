@@ -1,3 +1,6 @@
+import arrowIcon from "./assets/icon-arrow.svg"
+import arrowRight from "./assets/icon-angle-right.svg"
+import arrowLeft from "./assets/icon-angle-left.svg"
 export default function SectionOne({ title, desc, prev, next }) {
   return (
     <section className="one">
@@ -7,16 +10,16 @@ export default function SectionOne({ title, desc, prev, next }) {
         <h3>
           shop now{" "}
           <span data-image="image">
-            <img src="/src/assets/icon-arrow.svg" alt="arrow"></img>
+            <img src={arrowIcon} alt="arrow"></img>
           </span>
         </h3>
       </div>
       <div className="slider-btn">
         <button onClick={prev} className="navigate-arrow">
-          <img src="/src/assets/icon-angle-left.svg" />
+          <img src={arrowLeft} />
         </button>
         <button onClick={next} className="navigate-arrow">
-          <img src="/src/assets/icon-angle-right.svg" />
+          <img src={arrowRight} />
         </button>
       </div>
     </section>
