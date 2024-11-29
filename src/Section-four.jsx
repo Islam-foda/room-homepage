@@ -1,4 +1,4 @@
-import imgLight from "./assets/image-about-light.jpg";
+import imgLight from "/public/assets/image-about-light.jpg";
 
 export default function SectionFour() {
   return (

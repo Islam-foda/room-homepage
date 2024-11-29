@@ -1,6 +1,6 @@
-import logo from "./assets/logo.svg"
-import burgerBtn from "./assets/icon-hamburger.svg"
-import closeBtn from "./assets/icon-close.svg"
+import logo from "/public/assets/logo.svg"
+import burgerBtn from "/public/assets/icon-hamburger.svg"
+import closeBtn from "/public/assets/icon-close.svg"
 // import images from "./data"
 
 export default function Header({ image, title }) {

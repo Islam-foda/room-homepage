@@ -1,6 +1,6 @@
-import arrowIcon from "./assets/icon-arrow.svg"
-import arrowRight from "./assets/icon-angle-right.svg"
-import arrowLeft from "./assets/icon-angle-left.svg"
+import arrowIcon from "/public/assets/icon-arrow.svg"
+import arrowRight from "/public/assets/icon-angle-right.svg"
+import arrowLeft from "/public/assets/icon-angle-left.svg"
 export default function SectionOne({ title, desc, prev, next }) {
   return (
     <section className="one">

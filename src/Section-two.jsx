@@ -1,4 +1,4 @@
-import imgAbout from "./assets/image-about-dark.jpg"
+import imgAbout from "/public/assets/image-about-dark.jpg"
 export default function SectionTwo() {
   return (
     <section className="two">
